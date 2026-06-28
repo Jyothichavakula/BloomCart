@@ -25,7 +25,7 @@ function AdminPlants() {
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/plants"
+        `${import.meta.env.VITE_API_URL}/api/plants`
 
       );
 
@@ -56,7 +56,7 @@ function AdminPlants() {
 
       await axios.delete(
 
-        `http://localhost:5000/api/plants/${id}`
+        `${import.meta.env.VITE_API_URL}/api/plants/${id}`
 
       );
 

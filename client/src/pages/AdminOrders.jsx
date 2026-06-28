@@ -22,7 +22,7 @@ function AdminOrders() {
 
       const res = await axios.get(
 
-        "http://localhost:5000/api/orders"
+        `${import.meta.env.VITE_API_URL}/api/orders`
 
       );
 
@@ -50,7 +50,7 @@ function AdminOrders() {
 
       await axios.put(
 
-        `http://localhost:5000/api/orders/${id}`,
+        `${import.meta.env.VITE_API_URL}/api/orders/${id}`,
 
         { status }
 

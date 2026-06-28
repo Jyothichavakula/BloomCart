@@ -78,7 +78,7 @@ const [preview, setPreview] =
       const uploadRes =
         await axios.post(
 
-          "http://localhost:5000/api/upload",
+           `${import.meta.env.VITE_API_URL}/api/upload`,
 
           uploadData,
 
@@ -102,7 +102,7 @@ const [preview, setPreview] =
 
       await axios.post(
 
-        "http://localhost:5000/api/plants",
+  `${import.meta.env.VITE_API_URL}/api/plants`,
 
         {
 

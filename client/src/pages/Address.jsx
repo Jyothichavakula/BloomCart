@@ -59,7 +59,7 @@ function Address() {
         const res =
           await axios.put(
 
-            `http://localhost:5000/api/users/address/${user._id}`,
+            `${import.meta.env.VITE_API_URL}/api/users/address/${user._id}`,
 
             formData
 

@@ -117,8 +117,7 @@ const newArrivals =
   try {
 
     const res = await axios.get(
-      "http://localhost:5000/api/plants"
-    );
+ `${import.meta.env.VITE_API_URL}/api/plants`    );
 
     console.log("Plants Data:", res.data);
 
